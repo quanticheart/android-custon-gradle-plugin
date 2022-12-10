@@ -1,0 +1,36 @@
+buildscript {
+    apply from: "$rootDir/src/main/groovy/config.gradle"
+}
+
+plugins {
+    id 'groovy-gradle-plugin'
+    id 'java-gradle-plugin'
+    id 'groovy'
+}
+
+repositories {
+    gradlePluginPortal() // so that external plugins can be resolved in dependencies section
+}
+
+gradlePlugin {
+    plugins {
+        projectPlugin {
+            id = 'base-project-plugin'
+            implementationClass = 'ProjectPlugin'
+        }
+
+        simplePlugin {
+            id = 'security'
+            displayName = 'Gradle Multi Git plugin'
+            description = 'Demo plugin to use as a starting point for custom plugin development'
+            implementationClass = 'SecurityPlugin'
+            version = "1.0.0"
+        }
+
+        wonderlandPlugin {
+            id = 'wonderland'
+            implementationClass = 'WonderlandPlugin'
+        }
+    }
+
+}

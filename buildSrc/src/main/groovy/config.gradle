@@ -1,0 +1,18 @@
+ext {
+    //     SDK and tools
+    //==============================================================================================
+    minSdkVersion = 23
+    targetSdkVersion = 33
+    compileSdkVersion = 33
+
+    //   Connections
+    //==============================================================================================
+    retrofit = [
+            gson       : 'com.google.code.gson:gson:2.9.0',
+            okhttp     : 'com.squareup.okhttp3:okhttp:4.9.3',
+            interceptor: 'com.squareup.okhttp3:logging-interceptor:4.9.3',
+            retrofit   : 'com.squareup.retrofit2:retrofit:2.9.0',
+            converter  : 'com.squareup.retrofit2:converter-gson:2.9.0',
+    ]
+    retrofitLibs = retrofit.values()
+}

@@ -1,0 +1,21 @@
+plugins {
+    id 'com.android.library'
+    id 'base-project-plugin'
+}
+
+android {
+    namespace 'com.quanticheart.mylibrary'
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation 'androidx.appcompat:appcompat:1.5.1'
+    implementation 'com.google.android.material:material:1.7.0'
+    implementation retrofitLibs
+
+}
