@@ -1,7 +1,7 @@
 # Gradle Plugins
 
 - [gradle-best-practices](https://tomgregory.com/gradle-best-practices/)
-- [gradle-best-practices](https://tomgregory.com/introduction-to-gradle-plugins/)
+- [introduction-to-gradle-plugins](https://tomgregory.com/introduction-to-gradle-plugins/)
 - [better-dependencies-management-using-buildsrc-kotlin-dsl](https://proandroiddev.com/better-dependencies-management-using-buildsrc-kotlin-dsl-eda31cdb81bf)
 - [gradle-plugin-tutorial-for-android-getting-started](https://www.kodeco.com/22198417-gradle-plugin-tutorial-for-android-getting-started)
 - [gradle-plugin-bootstrap](https://www.eficode.com/blog/gradle-plugin-bootstrap)
